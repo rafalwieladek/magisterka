@@ -133,8 +133,8 @@ public:
         pos[1] = { 90, 90 };
         priority[1] = 500;
         service_time[1] = 10.0;
-        early_time[1] = 20.0; // Cel HVT jest niedostępny przez pierwsze 200 sekund (np. ukryty za przeszkodą)
-        due_time[1] = 40.0;  // Po 40 sekundach cel HVT ucieka (np. przemieszcza się poza zasięg)
+		early_time[1] = 20.0; // Cel HVT jest niedostępny przez pierwsze 200 sekund (np. ukryty za przeszkodą)
+		due_time[1] = 40.0;  // Po 40 sekundach cel HVT ucieka (np. przemieszcza się poza zasięg)
 
         // Punkty (2..N-1) - Cele poboczne i punkty przekaźnikowe. Niska punktacja.
         for (int i = 2; i < N; i++) {
@@ -337,7 +337,7 @@ public:
     // ROZWIĄZYWANIE PROBLEMU (Silnik CPLEX)
     // -------------------------------------------------------------------------
     void solve() {
-        //cplex.setOut(env.getNullStream()); // Wyciszenie potoku informacji technicznych z solvera
+        cplex.setOut(env.getNullStream()); // Wyciszenie potoku informacji technicznych z solvera
         cplex.setParam(IloCplex::TiLim, 120); // Limit czasu 120 sekund na instancję
 
         // Wyłączenie Pre-solve.
@@ -390,7 +390,7 @@ public:
         }
 
         // 2. RYSOWANIE TRAJEKTORII LOTU DRONÓW
-        std::string cols[] = { "red", "green", "blue", "orange", "purple", "brown" ,"yellow","pink" };
+        std::string cols[] = { "red", "green", "blue", "orange", "purple", "brown" ,"yellow","pink"};
         for (int k = 0; k < K; k++) {
 
             // MECHANIZM PRZESUNIĘCIA WEKTOROWEGO
@@ -503,11 +503,11 @@ T getParam(std::string prompt, T defaultValue) {
 }
 
 // ======================================================================================
-// GŁÓWNA PĘTLA PROGRAMU (Entry Point)
+// GŁÓWNA PĘTLA PROGRAMU
 // ======================================================================================
 int main() {
     std::cout << "===============================================================\n";
-    std::cout << " Optymalizator Liniowy MILP: Multi-UAV SAR & Relay Mission\n";
+    std::cout << " Optymalizator MILP: Multi-UAV SAR & Relay Mission\n";
     std::cout << " Wcisnij [ENTER] aby zatwierdzic wartosci domyślne.\n";
     std::cout << "===============================================================\n\n";
 
@@ -523,7 +523,7 @@ int main() {
     int K = getParam("Rozmiar floty (Liczba dronow K)", def_K);
     double R = getParam("Zasieg radia (R w metrach)", def_R);
     double Tmax = getParam("Budzet czasu baterii (Tmax w sek)", def_Tmax);
-    double V = getParam("Predkosc przelotowa maszyny (V)", def_V);
+    double V = getParam("Predkosc drona (V)", def_V);
 
     std::cout << "\n[INFO] Rozpoczynam ladowanie srodowiska dla " << K << " dronow i " << N << " celow.\n";
 
