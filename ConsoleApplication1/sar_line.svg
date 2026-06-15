@@ -1,0 +1,28 @@
+<svg width="1000" height="400" xmlns="http://www.w3.org/2000/svg">
+<rect width="100%" height="100%" fill="white" />
+<line x1="50" y1="200" x2="210" y2="200" stroke="gray" stroke-dasharray="5,5" stroke-width="2"/>
+<line x1="210" y1="200" x2="370" y2="200" stroke="gray" stroke-dasharray="5,5" stroke-width="2"/>
+<line x1="370" y1="200" x2="530" y2="200" stroke="gray" stroke-dasharray="5,5" stroke-width="2"/>
+<line x1="530" y1="200" x2="690" y2="200" stroke="gray" stroke-dasharray="5,5" stroke-width="2"/>
+<line x1="690" y1="200" x2="850" y2="200" stroke="gray" stroke-dasharray="5,5" stroke-width="2"/>
+<line x1="50" y1="190" x2="370" y2="190" stroke="red" stroke-width="2"/>
+<line x1="370" y1="190" x2="690" y2="190" stroke="red" stroke-width="2"/>
+<circle cx="690" cy="190" r="4" fill="red"/><line x1="50" y1="195" x2="370" y2="195" stroke="green" stroke-width="2"/>
+<circle cx="370" cy="195" r="4" fill="green"/><line x1="50" y1="200" x2="370" y2="200" stroke="blue" stroke-width="2"/>
+<line x1="370" y1="200" x2="850" y2="200" stroke="blue" stroke-width="2"/>
+<line x1="850" y1="200" x2="210" y2="200" stroke="blue" stroke-width="2"/>
+<circle cx="210" cy="200" r="4" fill="blue"/><line x1="50" y1="205" x2="530" y2="205" stroke="orange" stroke-width="2"/>
+<circle cx="530" cy="205" r="4" fill="orange"/><line x1="50" y1="210" x2="850" y2="210" stroke="purple" stroke-width="2"/>
+<circle cx="850" cy="210" r="4" fill="purple"/><circle cx="50" cy="200" r="6" fill="none" stroke="black"/>
+<text x="47" y="220" font-size="10">0</text>
+<circle cx="210" cy="200" r="6" fill="none" stroke="black"/>
+<text x="207" y="220" font-size="10">1</text>
+<circle cx="370" cy="200" r="6" fill="none" stroke="black"/>
+<text x="367" y="220" font-size="10">2</text>
+<circle cx="530" cy="200" r="6" fill="none" stroke="black"/>
+<text x="527" y="220" font-size="10">3</text>
+<circle cx="690" cy="200" r="6" fill="none" stroke="black"/>
+<text x="687" y="220" font-size="10">4</text>
+<circle cx="850" cy="200" r="6" fill="none" stroke="black"/>
+<text x="847" y="220" font-size="10">5</text>
+</svg>

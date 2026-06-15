@@ -1,0 +1,19 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+<rect width="100%" height="100%" fill="white" />
+<text x="20" y="30" font-family="Arial">Robust Plan. Obj: 0</text>
+<circle cx="350" cy="450" r="5" fill="#ddd" />
+<rect x="342" y="442" width="16" height="16" fill="gold" stroke="black"/><circle cx="440" cy="654" r="5" fill="#ddd" />
+<circle cx="74" cy="726" r="5" fill="#ddd" />
+<circle cx="638" cy="738" r="5" fill="#ddd" />
+<circle cx="224" cy="570" r="5" fill="#ddd" />
+<circle cx="494" cy="672" r="5" fill="#ddd" />
+<circle cx="206" cy="342" r="5" fill="#ddd" />
+<circle cx="224" cy="444" r="5" fill="#ddd" />
+<circle cx="176" cy="690" r="5" fill="#ddd" />
+<circle cx="620" cy="408" r="5" fill="#ddd" />
+<circle cx="104" cy="264" r="5" fill="#ddd" />
+<circle cx="218" cy="678" r="5" fill="#ddd" />
+<circle cx="200" cy="492" r="5" fill="#ddd" />
+<circle cx="518" cy="258" r="5" fill="#ddd" />
+<circle cx="254" cy="534" r="5" fill="#ddd" />
+</svg>
